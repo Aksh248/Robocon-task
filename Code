@@ -1,0 +1,24 @@
+int motorPinRight = 5;
+void setup() {
+ pinMode (motorPinLeft, OUTPUT);
+ pinMode (motorPinRight, OUTPUT);
+}
+
+void loop() {
+  //left
+   digitalWrite(motorPinLeft, HIGH);
+   digitalWrite(motorPinRight, LOW);
+  
+  delay(10000);
+  //straight
+  digitalWrite(motorPinLeft, HIGH);
+   digitalWrite(motorPinRight, HIGH);
+
+  delay(10000);
+  //right
+  digitalWrite(motorPinLeft, LOW);
+   digitalWrite(motorPinRight, HIGH);
+  
+  
+   
+}
